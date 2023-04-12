@@ -1,0 +1,12 @@
+D:\Users\celeb\Desktop\Cegep\Cegep sixieme\MICROSOFT\Cours 9\Projetbibliotheque\Projetbibliotheque\bin\Debug\net7.0\Projetbibliotheque.deps.json
+D:\Users\celeb\Desktop\Cegep\Cegep sixieme\MICROSOFT\Cours 9\Projetbibliotheque\Projetbibliotheque\bin\Debug\net7.0\Projetbibliotheque.dll
+D:\Users\celeb\Desktop\Cegep\Cegep sixieme\MICROSOFT\Cours 9\Projetbibliotheque\Projetbibliotheque\bin\Debug\net7.0\Projetbibliotheque.pdb
+D:\Users\celeb\Desktop\Cegep\Cegep sixieme\MICROSOFT\Cours 9\Projetbibliotheque\Projetbibliotheque\obj\Debug\net7.0\Projetbibliotheque.csproj.AssemblyReference.cache
+D:\Users\celeb\Desktop\Cegep\Cegep sixieme\MICROSOFT\Cours 9\Projetbibliotheque\Projetbibliotheque\obj\Debug\net7.0\Projetbibliotheque.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\celeb\Desktop\Cegep\Cegep sixieme\MICROSOFT\Cours 9\Projetbibliotheque\Projetbibliotheque\obj\Debug\net7.0\Projetbibliotheque.AssemblyInfoInputs.cache
+D:\Users\celeb\Desktop\Cegep\Cegep sixieme\MICROSOFT\Cours 9\Projetbibliotheque\Projetbibliotheque\obj\Debug\net7.0\Projetbibliotheque.AssemblyInfo.cs
+D:\Users\celeb\Desktop\Cegep\Cegep sixieme\MICROSOFT\Cours 9\Projetbibliotheque\Projetbibliotheque\obj\Debug\net7.0\Projetbibliotheque.csproj.CoreCompileInputs.cache
+D:\Users\celeb\Desktop\Cegep\Cegep sixieme\MICROSOFT\Cours 9\Projetbibliotheque\Projetbibliotheque\obj\Debug\net7.0\Projetbibliotheque.dll
+D:\Users\celeb\Desktop\Cegep\Cegep sixieme\MICROSOFT\Cours 9\Projetbibliotheque\Projetbibliotheque\obj\Debug\net7.0\refint\Projetbibliotheque.dll
+D:\Users\celeb\Desktop\Cegep\Cegep sixieme\MICROSOFT\Cours 9\Projetbibliotheque\Projetbibliotheque\obj\Debug\net7.0\Projetbibliotheque.pdb
+D:\Users\celeb\Desktop\Cegep\Cegep sixieme\MICROSOFT\Cours 9\Projetbibliotheque\Projetbibliotheque\obj\Debug\net7.0\ref\Projetbibliotheque.dll
