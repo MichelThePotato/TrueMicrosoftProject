@@ -36,7 +36,7 @@ namespace TestsBibliotheque.Tests
 
             using (var db = new BibliothequeAdminDbContext(connexionString))
             {
-                var unlivre = new Livre { Titre = "Attaque des titans", AnneePublication = 4 };
+                var unlivre = new Livre { Titre = "Cheval", AnneePublication = 4 };
                 db.Livres.Add(unlivre);
                 db.SaveChanges();
             }
@@ -73,9 +73,9 @@ namespace TestsBibliotheque.Tests
 
             using (var bibliothequeLivres = new BibliothequeLivre(connexionString))
             {
-                var numDeLaBiblio = 1;
+                var michelId = 1;
                 var numDulivre = 1;
-                var actual = bibliothequeLivres.Add(numDeLaBiblio, numDulivre);
+                var actual = bibliothequeLivres.Add(michelId, numDulivre);
                 Assert.IsFalse(actual); // Vérification que l'ajout a échoué
             }
         }
@@ -87,7 +87,7 @@ namespace TestsBibliotheque.Tests
             var baseName = "Delete1LivreBibliothequeExistant";
             var connexionString = $"Server=(localdb)\\mssqllocaldb;Database={baseName};Trusted_Connection=true;";
             var uneBibliotheque = new UneBibliotheque() { Nom = "Michel" };
-            var unlivre = new Livre { Titre = "Attaque des titans", AnneePublication = 4 };
+            var unlivre = new Livre { Titre = "Tacos", AnneePublication = 4 };
 
 
             using (var bibliotheques = new Bibliotheques(connexionString, ensureCreated: true))
@@ -151,16 +151,16 @@ namespace TestsBibliotheque.Tests
 
             using (var db = new BibliothequeAdminDbContext(connexionString))
             {
-                var unlivre = new Livre { Titre = "Attaque des titans", AnneePublication = 4 };
+                var unlivre = new Livre { Titre = "MacNCheese", AnneePublication = 4 };
                 db.Livres.Add(unlivre);
                 db.SaveChanges();
             }
 
             using (var bibliothequeLivres = new BibliothequeLivre(connexionString))
             {
-                var numDeLaBiblio = 1;
-                var numDulivre = 1;
-                bibliothequeLivres.Add(numDeLaBiblio, numDulivre);
+                var michelId = 1;
+                var macNCheeseId = 1;
+                bibliothequeLivres.Add(michelId, macNCheeseId);
                 var result = bibliothequeLivres.GetAllLivresWithBibliotheque();
                 Assert.AreEqual(1, result?.Count());
             }
@@ -181,18 +181,19 @@ namespace TestsBibliotheque.Tests
 
             using (var db = new BibliothequeAdminDbContext(connexionString))
             {
-                var unlivre = new Livre { Titre = "Attaque des titans", AnneePublication = 4 };
+                var unlivre = new Livre { Titre = "CocaCola", AnneePublication = 4 };
                 db.Livres.Add(unlivre);
                 db.SaveChanges();
             }
 
             using (var bibliothequeLivres = new BibliothequeLivre(connexionString))
             {
-                var numDeLaBiblio = 1;
-                var numDulivre = 1;
-                bibliothequeLivres.Add(numDeLaBiblio, numDulivre);
+                var michelId = 1;
+                var cocacolaId = 1;
+
+                bibliothequeLivres.Add(michelId, cocacolaId);
                 var result = bibliothequeLivres.GetAllLivresWithBibliotheque(1);
-                Assert.AreEqual(1, result.Count());
+                Assert.AreEqual(1, result?.Count());
             }
         }
 
@@ -215,9 +216,9 @@ namespace TestsBibliotheque.Tests
 
             using (var db = new BibliothequeAdminDbContext(connexionString))
             {
-                var unlivre = new Livre { Titre = "Attaque des titans", AnneePublication = 4 };
-                var unlivre2 = new Livre { Titre = "Naruto", AnneePublication = 6 };
-                var unlivre3 = new Livre { Titre = "Bleach", AnneePublication = 10 };
+                var unlivre = new Livre { Titre = "Brocoli", AnneePublication = 4 };
+                var unlivre2 = new Livre { Titre = "Raisin", AnneePublication = 6 };
+                var unlivre3 = new Livre { Titre = "Carotte", AnneePublication = 10 };
                 db.Livres.Add(unlivre);
                 db.Livres.Add(unlivre2);
                 db.Livres.Add(unlivre3);
@@ -227,12 +228,12 @@ namespace TestsBibliotheque.Tests
 
             using (var bibliothequeLivres = new BibliothequeLivre(connexionString))
             {
-                var numDeLaBiblio = 1;
+                var michelId = 1;
                 var precedent = 1;
                 var actuellement = 3;
-                var autre = 2;
-                //bibliothequeLivres.Add(numDeLaBiblio, precedent);
-                var actual = bibliothequeLivres.Update(numDeLaBiblio, precedent, actuellement);
+
+                bibliothequeLivres.Add(michelId, precedent);
+                var actual = bibliothequeLivres.Update(michelId, precedent, actuellement);
                 Assert.IsTrue(actual);
 
             }
@@ -253,8 +254,8 @@ namespace TestsBibliotheque.Tests
 
             using (var db = new BibliothequeAdminDbContext(connexionString))
             {
-                var unlivre = new Livre { Titre = "Attaque des titans", AnneePublication = 4 };
-                var unlivre2 = new Livre { Titre = "Naruto", AnneePublication = 6 };
+                var unlivre = new Livre { Titre = "Brocoli", AnneePublication = 4 };
+                var unlivre2 = new Livre { Titre = "Raisin", AnneePublication = 6 };
                 db.Livres.Add(unlivre);
                 db.Livres.Add(unlivre2);
                 db.SaveChanges();
@@ -262,10 +263,10 @@ namespace TestsBibliotheque.Tests
 
             using (var bibliothequeLivres = new BibliothequeLivre(connexionString))
             {
-                var numDeLaBiblio = 1;
+                var michelId = 1;
                 var precedent = 1;
                 var actuellement = 3;
-                var actual = bibliothequeLivres.Update(numDeLaBiblio, precedent, actuellement);
+                var actual = bibliothequeLivres.Update(michelId, precedent, actuellement);
                 Assert.IsFalse(actual);
 
             }

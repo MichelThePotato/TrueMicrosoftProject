@@ -1,0 +1,910 @@
+dbug: 2023-04-12 19:29:39.921 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'UneBibliotheque.LivreId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 2023-04-12 19:29:39.922 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'UneBibliothequeUsager (Dictionary<string, object>).BibiliothequesId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 2023-04-12 19:29:39.922 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'UneBibliothequeUsager (Dictionary<string, object>).UsagersId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 2023-04-12 19:29:40.119 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 7.0.5 initialized 'BibliothequeAdminDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.5' with options: None
+dbug: 2023-04-12 19:29:40.134 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 2023-04-12 19:29:40.158 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (26ms).
+dbug: 2023-04-12 19:29:40.161 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:40.434 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:40.443 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 2023-04-12 19:29:40.450 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (8ms).
+dbug: 2023-04-12 19:29:40.453 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (13ms).
+dbug: 2023-04-12 19:29:40.460 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+info: 2023-04-12 19:29:40.495 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+dbug: 2023-04-12 19:29:40.498 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:40.507 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb' (6ms).
+dbug: 2023-04-12 19:29:40.554 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 2023-04-12 19:29:40.554 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 2023-04-12 19:29:40.554 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'master' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:40.570 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'master' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:40.570 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 2023-04-12 19:29:40.570 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 2023-04-12 19:29:40.571 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 2023-04-12 19:29:40.571 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='60']
+      IF SERVERPROPERTY('EngineEdition') <> 5
+      BEGIN
+          ALTER DATABASE [TestAgrege] SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+      END;
+info: 2023-04-12 19:29:40.575 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+      IF SERVERPROPERTY('EngineEdition') <> 5
+      BEGIN
+          ALTER DATABASE [TestAgrege] SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+      END;
+dbug: 2023-04-12 19:29:40.575 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 2023-04-12 19:29:40.575 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 2023-04-12 19:29:40.575 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 2023-04-12 19:29:40.575 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='60']
+      DROP DATABASE [TestAgrege];
+info: 2023-04-12 19:29:40.610 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (35ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+      DROP DATABASE [TestAgrege];
+dbug: 2023-04-12 19:29:40.611 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'master' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:40.611 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'master' on server '(localdb)\mssqllocaldb' (0ms).
+dbug: 2023-04-12 19:29:40.613 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'master' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:40.614 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (1ms).
+dbug: 2023-04-12 19:29:40.615 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:40.625 RelationalEventId.ConnectionError[20004] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      An error occurred using the connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:40.648 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'UneBibliotheque.LivreId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 2023-04-12 19:29:40.648 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'UneBibliothequeUsager (Dictionary<string, object>).BibiliothequesId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 2023-04-12 19:29:40.648 CoreEventId.ShadowPropertyCreated[10600] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      The property 'UneBibliothequeUsager (Dictionary<string, object>).UsagersId' was created in shadow state because there are no eligible CLR members with a matching name.
+dbug: 2023-04-12 19:29:40.668 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 2023-04-12 19:29:40.668 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 2023-04-12 19:29:40.668 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'master' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:40.669 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'master' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:40.669 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 2023-04-12 19:29:40.669 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 2023-04-12 19:29:40.669 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 2023-04-12 19:29:40.669 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='60']
+      CREATE DATABASE [TestAgrege];
+info: 2023-04-12 19:29:41.132 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (463ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+      CREATE DATABASE [TestAgrege];
+dbug: 2023-04-12 19:29:41.132 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 2023-04-12 19:29:41.132 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 2023-04-12 19:29:41.132 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 2023-04-12 19:29:41.132 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='60']
+      IF SERVERPROPERTY('EngineEdition') <> 5
+      BEGIN
+          ALTER DATABASE [TestAgrege] SET READ_COMMITTED_SNAPSHOT ON;
+      END;
+info: 2023-04-12 19:29:41.210 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (77ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+      IF SERVERPROPERTY('EngineEdition') <> 5
+      BEGIN
+          ALTER DATABASE [TestAgrege] SET READ_COMMITTED_SNAPSHOT ON;
+      END;
+dbug: 2023-04-12 19:29:41.210 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'master' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:41.210 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'master' on server '(localdb)\mssqllocaldb' (0ms).
+dbug: 2023-04-12 19:29:41.211 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'master' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:41.211 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 2023-04-12 19:29:41.211 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:41.226 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:41.226 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 2023-04-12 19:29:41.226 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 2023-04-12 19:29:41.226 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 2023-04-12 19:29:41.226 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+info: 2023-04-12 19:29:41.226 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+dbug: 2023-04-12 19:29:41.227 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:41.227 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb' (0ms).
+dbug: 2023-04-12 19:29:41.310 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:41.311 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:41.313 RelationalEventId.TransactionStarting[20209] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Beginning transaction with isolation level 'Unspecified'.
+dbug: 2023-04-12 19:29:41.328 RelationalEventId.TransactionStarted[20200] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Began transaction with isolation level 'ReadCommitted'.
+dbug: 2023-04-12 19:29:41.329 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 2023-04-12 19:29:41.329 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 2023-04-12 19:29:41.330 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 2023-04-12 19:29:41.331 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Livres] (
+          [Id] int NOT NULL IDENTITY,
+          [Titre] nvarchar(max) NULL,
+          [AnneePublication] int NOT NULL,
+          [IdBibliotheque] int NULL,
+          CONSTRAINT [PK_Livres] PRIMARY KEY ([Id])
+      );
+info: 2023-04-12 19:29:41.340 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Livres] (
+          [Id] int NOT NULL IDENTITY,
+          [Titre] nvarchar(max) NULL,
+          [AnneePublication] int NOT NULL,
+          [IdBibliotheque] int NULL,
+          CONSTRAINT [PK_Livres] PRIMARY KEY ([Id])
+      );
+dbug: 2023-04-12 19:29:41.340 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 2023-04-12 19:29:41.340 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 2023-04-12 19:29:41.341 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 2023-04-12 19:29:41.341 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Usagers] (
+          [Id] int NOT NULL IDENTITY,
+          [Nom] nvarchar(max) NULL,
+          [IdBibliotheque] int NULL,
+          CONSTRAINT [PK_Usagers] PRIMARY KEY ([Id])
+      );
+info: 2023-04-12 19:29:41.342 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Usagers] (
+          [Id] int NOT NULL IDENTITY,
+          [Nom] nvarchar(max) NULL,
+          [IdBibliotheque] int NULL,
+          CONSTRAINT [PK_Usagers] PRIMARY KEY ([Id])
+      );
+dbug: 2023-04-12 19:29:41.343 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 2023-04-12 19:29:41.343 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 2023-04-12 19:29:41.343 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 2023-04-12 19:29:41.343 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Bibliotheques] (
+          [Id] int NOT NULL IDENTITY,
+          [Nom] nvarchar(max) NULL,
+          [LivreId] int NULL,
+          CONSTRAINT [PK_Bibliotheques] PRIMARY KEY ([Id]),
+          CONSTRAINT [FK_Bibliotheques_Livres_LivreId] FOREIGN KEY ([LivreId]) REFERENCES [Livres] ([Id])
+      );
+info: 2023-04-12 19:29:41.345 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Bibliotheques] (
+          [Id] int NOT NULL IDENTITY,
+          [Nom] nvarchar(max) NULL,
+          [LivreId] int NULL,
+          CONSTRAINT [PK_Bibliotheques] PRIMARY KEY ([Id]),
+          CONSTRAINT [FK_Bibliotheques_Livres_LivreId] FOREIGN KEY ([LivreId]) REFERENCES [Livres] ([Id])
+      );
+dbug: 2023-04-12 19:29:41.345 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 2023-04-12 19:29:41.345 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 2023-04-12 19:29:41.345 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 2023-04-12 19:29:41.346 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [UneBibliothequeUsager] (
+          [BibiliothequesId] int NOT NULL,
+          [UsagersId] int NOT NULL,
+          CONSTRAINT [PK_UneBibliothequeUsager] PRIMARY KEY ([BibiliothequesId], [UsagersId]),
+          CONSTRAINT [FK_UneBibliothequeUsager_Bibliotheques_BibiliothequesId] FOREIGN KEY ([BibiliothequesId]) REFERENCES [Bibliotheques] ([Id]) ON DELETE CASCADE,
+          CONSTRAINT [FK_UneBibliothequeUsager_Usagers_UsagersId] FOREIGN KEY ([UsagersId]) REFERENCES [Usagers] ([Id]) ON DELETE CASCADE
+      );
+info: 2023-04-12 19:29:41.347 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [UneBibliothequeUsager] (
+          [BibiliothequesId] int NOT NULL,
+          [UsagersId] int NOT NULL,
+          CONSTRAINT [PK_UneBibliothequeUsager] PRIMARY KEY ([BibiliothequesId], [UsagersId]),
+          CONSTRAINT [FK_UneBibliothequeUsager_Bibliotheques_BibiliothequesId] FOREIGN KEY ([BibiliothequesId]) REFERENCES [Bibliotheques] ([Id]) ON DELETE CASCADE,
+          CONSTRAINT [FK_UneBibliothequeUsager_Usagers_UsagersId] FOREIGN KEY ([UsagersId]) REFERENCES [Usagers] ([Id]) ON DELETE CASCADE
+      );
+dbug: 2023-04-12 19:29:41.347 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 2023-04-12 19:29:41.347 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 2023-04-12 19:29:41.347 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 2023-04-12 19:29:41.348 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX [IX_Bibliotheques_LivreId] ON [Bibliotheques] ([LivreId]);
+info: 2023-04-12 19:29:41.348 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX [IX_Bibliotheques_LivreId] ON [Bibliotheques] ([LivreId]);
+dbug: 2023-04-12 19:29:41.348 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 2023-04-12 19:29:41.348 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 2023-04-12 19:29:41.348 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 2023-04-12 19:29:41.348 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX [IX_UneBibliothequeUsager_UsagersId] ON [UneBibliothequeUsager] ([UsagersId]);
+info: 2023-04-12 19:29:41.349 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX [IX_UneBibliothequeUsager_UsagersId] ON [UneBibliothequeUsager] ([UsagersId]);
+dbug: 2023-04-12 19:29:41.351 RelationalEventId.TransactionCommitting[20210] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Committing transaction.
+dbug: 2023-04-12 19:29:41.355 RelationalEventId.TransactionCommitted[20202] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Committed transaction.
+dbug: 2023-04-12 19:29:41.357 RelationalEventId.TransactionDisposed[20204] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Disposing transaction.
+dbug: 2023-04-12 19:29:41.357 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:41.357 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb' (0ms).
+dbug: 2023-04-12 19:29:41.399 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      'BibliothequeAdminDbContext' generated a temporary value for the property 'Id.UneBibliotheque'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 2023-04-12 19:29:41.480 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BibliothequeAdminDbContext' started tracking 'UneBibliotheque' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 2023-04-12 19:29:41.483 CoreEventId.SaveChangesStarting[10004] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges starting for 'BibliothequeAdminDbContext'.
+dbug: 2023-04-12 19:29:41.486 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'BibliothequeAdminDbContext'.
+dbug: 2023-04-12 19:29:41.495 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'BibliothequeAdminDbContext'.
+dbug: 2023-04-12 19:29:41.557 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:41.558 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:41.560 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 2023-04-12 19:29:41.560 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 2023-04-12 19:29:41.564 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (4ms).
+dbug: 2023-04-12 19:29:41.568 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SET IMPLICIT_TRANSACTIONS OFF;
+      SET NOCOUNT ON;
+      INSERT INTO [Bibliotheques] ([LivreId], [Nom])
+      OUTPUT INSERTED.[Id]
+      VALUES (@p0, @p1);
+info: 2023-04-12 19:29:41.600 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (35ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SET IMPLICIT_TRANSACTIONS OFF;
+      SET NOCOUNT ON;
+      INSERT INTO [Bibliotheques] ([LivreId], [Nom])
+      OUTPUT INSERTED.[Id]
+      VALUES (@p0, @p1);
+dbug: 2023-04-12 19:29:41.617 CoreEventId.ForeignKeyChangeDetected[10803] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      The foreign key property 'UneBibliotheque.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+dbug: 2023-04-12 19:29:41.627 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:41.632 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'TestAgrege' on server '(localdb)\mssqllocaldb' is being disposed after spending 29ms reading results.
+dbug: 2023-04-12 19:29:41.633 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:41.633 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb' (0ms).
+dbug: 2023-04-12 19:29:41.642 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      An entity of type 'UneBibliotheque' tracked by 'BibliothequeAdminDbContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 2023-04-12 19:29:41.643 CoreEventId.SaveChangesCompleted[10005] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges completed for 'BibliothequeAdminDbContext' with 1 entities written to the database.
+dbug: 2023-04-12 19:29:41.644 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      'BibliothequeAdminDbContext' generated a temporary value for the property 'Id.UneBibliotheque'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 2023-04-12 19:29:41.645 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BibliothequeAdminDbContext' started tracking 'UneBibliotheque' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 2023-04-12 19:29:41.645 CoreEventId.SaveChangesStarting[10004] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges starting for 'BibliothequeAdminDbContext'.
+dbug: 2023-04-12 19:29:41.645 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'BibliothequeAdminDbContext'.
+dbug: 2023-04-12 19:29:41.647 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'BibliothequeAdminDbContext'.
+dbug: 2023-04-12 19:29:41.648 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:41.648 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:41.648 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 2023-04-12 19:29:41.648 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 2023-04-12 19:29:41.649 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 2023-04-12 19:29:41.649 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SET IMPLICIT_TRANSACTIONS OFF;
+      SET NOCOUNT ON;
+      INSERT INTO [Bibliotheques] ([LivreId], [Nom])
+      OUTPUT INSERTED.[Id]
+      VALUES (@p0, @p1);
+info: 2023-04-12 19:29:41.660 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (11ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SET IMPLICIT_TRANSACTIONS OFF;
+      SET NOCOUNT ON;
+      INSERT INTO [Bibliotheques] ([LivreId], [Nom])
+      OUTPUT INSERTED.[Id]
+      VALUES (@p0, @p1);
+dbug: 2023-04-12 19:29:41.660 CoreEventId.ForeignKeyChangeDetected[10803] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      The foreign key property 'UneBibliotheque.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+dbug: 2023-04-12 19:29:41.661 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:41.661 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'TestAgrege' on server '(localdb)\mssqllocaldb' is being disposed after spending 0ms reading results.
+dbug: 2023-04-12 19:29:41.661 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:41.661 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb' (0ms).
+dbug: 2023-04-12 19:29:41.661 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      An entity of type 'UneBibliotheque' tracked by 'BibliothequeAdminDbContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 2023-04-12 19:29:41.661 CoreEventId.SaveChangesCompleted[10005] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges completed for 'BibliothequeAdminDbContext' with 1 entities written to the database.
+dbug: 2023-04-12 19:29:41.661 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      'BibliothequeAdminDbContext' generated a temporary value for the property 'Id.UneBibliotheque'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 2023-04-12 19:29:41.661 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BibliothequeAdminDbContext' started tracking 'UneBibliotheque' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 2023-04-12 19:29:41.661 CoreEventId.SaveChangesStarting[10004] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges starting for 'BibliothequeAdminDbContext'.
+dbug: 2023-04-12 19:29:41.661 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'BibliothequeAdminDbContext'.
+dbug: 2023-04-12 19:29:41.662 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'BibliothequeAdminDbContext'.
+dbug: 2023-04-12 19:29:41.662 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:41.662 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:41.662 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 2023-04-12 19:29:41.662 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 2023-04-12 19:29:41.662 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 2023-04-12 19:29:41.662 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SET IMPLICIT_TRANSACTIONS OFF;
+      SET NOCOUNT ON;
+      INSERT INTO [Bibliotheques] ([LivreId], [Nom])
+      OUTPUT INSERTED.[Id]
+      VALUES (@p0, @p1);
+info: 2023-04-12 19:29:41.672 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SET IMPLICIT_TRANSACTIONS OFF;
+      SET NOCOUNT ON;
+      INSERT INTO [Bibliotheques] ([LivreId], [Nom])
+      OUTPUT INSERTED.[Id]
+      VALUES (@p0, @p1);
+dbug: 2023-04-12 19:29:41.672 CoreEventId.ForeignKeyChangeDetected[10803] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      The foreign key property 'UneBibliotheque.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+dbug: 2023-04-12 19:29:41.672 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:41.672 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'TestAgrege' on server '(localdb)\mssqllocaldb' is being disposed after spending 0ms reading results.
+dbug: 2023-04-12 19:29:41.672 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:41.672 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb' (0ms).
+dbug: 2023-04-12 19:29:41.672 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      An entity of type 'UneBibliotheque' tracked by 'BibliothequeAdminDbContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 2023-04-12 19:29:41.672 CoreEventId.SaveChangesCompleted[10005] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges completed for 'BibliothequeAdminDbContext' with 1 entities written to the database.
+dbug: 2023-04-12 19:29:41.674 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'BibliothequeAdminDbContext' disposed.
+dbug: 2023-04-12 19:29:41.675 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:41.675 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 2023-04-12 19:29:41.707 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 7.0.5 initialized 'BibliothequeAdminDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.5' with options: None
+dbug: 2023-04-12 19:29:41.710 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      'BibliothequeAdminDbContext' generated a temporary value for the property 'Id.Livre'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 2023-04-12 19:29:41.725 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BibliothequeAdminDbContext' started tracking 'Livre' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 2023-04-12 19:29:41.725 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      'BibliothequeAdminDbContext' generated a temporary value for the property 'Id.Livre'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 2023-04-12 19:29:41.725 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BibliothequeAdminDbContext' started tracking 'Livre' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 2023-04-12 19:29:41.725 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      'BibliothequeAdminDbContext' generated a temporary value for the property 'Id.Livre'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 2023-04-12 19:29:41.725 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BibliothequeAdminDbContext' started tracking 'Livre' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 2023-04-12 19:29:41.725 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      'BibliothequeAdminDbContext' generated a temporary value for the property 'Id.Livre'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 2023-04-12 19:29:41.725 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BibliothequeAdminDbContext' started tracking 'Livre' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 2023-04-12 19:29:41.725 CoreEventId.SaveChangesStarting[10004] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges starting for 'BibliothequeAdminDbContext'.
+dbug: 2023-04-12 19:29:41.726 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'BibliothequeAdminDbContext'.
+dbug: 2023-04-12 19:29:41.729 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'BibliothequeAdminDbContext'.
+dbug: 2023-04-12 19:29:41.735 RelationalEventId.BatchReadyForExecution[20700] (Microsoft.EntityFrameworkCore.Update) 
+      Executing 4 update commands as a batch.
+dbug: 2023-04-12 19:29:41.738 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 2023-04-12 19:29:41.738 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 2023-04-12 19:29:41.738 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:41.739 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:41.739 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 2023-04-12 19:29:41.739 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 2023-04-12 19:29:41.739 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 2023-04-12 19:29:41.739 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (Size = 4000), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32), @p8='?' (Size = 4000), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SET IMPLICIT_TRANSACTIONS OFF;
+      SET NOCOUNT ON;
+      MERGE [Livres] USING (
+      VALUES (@p0, @p1, @p2, 0),
+      (@p3, @p4, @p5, 1),
+      (@p6, @p7, @p8, 2),
+      (@p9, @p10, @p11, 3)) AS i ([AnneePublication], [IdBibliotheque], [Titre], _Position) ON 1=0
+      WHEN NOT MATCHED THEN
+      INSERT ([AnneePublication], [IdBibliotheque], [Titre])
+      VALUES (i.[AnneePublication], i.[IdBibliotheque], i.[Titre])
+      OUTPUT INSERTED.[Id], i._Position;
+info: 2023-04-12 19:29:41.753 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (14ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (Size = 4000), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32), @p8='?' (Size = 4000), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SET IMPLICIT_TRANSACTIONS OFF;
+      SET NOCOUNT ON;
+      MERGE [Livres] USING (
+      VALUES (@p0, @p1, @p2, 0),
+      (@p3, @p4, @p5, 1),
+      (@p6, @p7, @p8, 2),
+      (@p9, @p10, @p11, 3)) AS i ([AnneePublication], [IdBibliotheque], [Titre], _Position) ON 1=0
+      WHEN NOT MATCHED THEN
+      INSERT ([AnneePublication], [IdBibliotheque], [Titre])
+      VALUES (i.[AnneePublication], i.[IdBibliotheque], i.[Titre])
+      OUTPUT INSERTED.[Id], i._Position;
+dbug: 2023-04-12 19:29:41.754 CoreEventId.ForeignKeyChangeDetected[10803] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      The foreign key property 'Livre.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+dbug: 2023-04-12 19:29:41.756 CoreEventId.ForeignKeyChangeDetected[10803] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      The foreign key property 'Livre.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+dbug: 2023-04-12 19:29:41.756 CoreEventId.ForeignKeyChangeDetected[10803] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      The foreign key property 'Livre.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+dbug: 2023-04-12 19:29:41.756 CoreEventId.ForeignKeyChangeDetected[10803] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      The foreign key property 'Livre.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+dbug: 2023-04-12 19:29:41.756 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:41.756 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'TestAgrege' on server '(localdb)\mssqllocaldb' is being disposed after spending 2ms reading results.
+dbug: 2023-04-12 19:29:41.756 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:41.756 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb' (0ms).
+dbug: 2023-04-12 19:29:41.757 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      An entity of type 'Livre' tracked by 'BibliothequeAdminDbContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 2023-04-12 19:29:41.757 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      An entity of type 'Livre' tracked by 'BibliothequeAdminDbContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 2023-04-12 19:29:41.757 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      An entity of type 'Livre' tracked by 'BibliothequeAdminDbContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 2023-04-12 19:29:41.757 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      An entity of type 'Livre' tracked by 'BibliothequeAdminDbContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 2023-04-12 19:29:41.757 CoreEventId.SaveChangesCompleted[10005] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges completed for 'BibliothequeAdminDbContext' with 4 entities written to the database.
+dbug: 2023-04-12 19:29:41.757 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'BibliothequeAdminDbContext' disposed.
+dbug: 2023-04-12 19:29:41.757 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:41.757 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 2023-04-12 19:29:41.825 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 7.0.5 initialized 'BibliothequeAdminDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.5' with options: None
+dbug: 2023-04-12 19:29:41.859 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<Livre>()
+          .SingleOrDefault(unLivre => unLivre.Id == __livreId_0)'
+dbug: 2023-04-12 19:29:42.071 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<Livre>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Livre.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Livre.AnneePublication (int) Required, 1], [Property: Livre.IdBibliotheque (int?), 2], [Property: Livre.Titre (string), 3] }
+              SELECT TOP(2) l.Id, l.AnneePublication, l.IdBibliotheque, l.Titre
+              FROM Livres AS l
+              WHERE l.Id == @__livreId_0), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Livre>, 
+          LesBibiliotheque.Data.Data.BibliothequeAdminDbContext, 
+          False, 
+          False, 
+          True
+      )
+          .SingleOrDefault()'
+dbug: 2023-04-12 19:29:42.107 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 2023-04-12 19:29:42.107 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 2023-04-12 19:29:42.107 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 2023-04-12 19:29:42.107 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 2023-04-12 19:29:42.107 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 2023-04-12 19:29:42.107 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:42.107 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:42.107 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[@__livreId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [l].[Id], [l].[AnneePublication], [l].[IdBibliotheque], [l].[Titre]
+      FROM [Livres] AS [l]
+      WHERE [l].[Id] = @__livreId_0
+info: 2023-04-12 19:29:42.119 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (11ms) [Parameters=[@__livreId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [l].[Id], [l].[AnneePublication], [l].[IdBibliotheque], [l].[Titre]
+      FROM [Livres] AS [l]
+      WHERE [l].[Id] = @__livreId_0
+dbug: 2023-04-12 19:29:42.124 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BibliothequeAdminDbContext' started tracking 'Livre' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 2023-04-12 19:29:42.125 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:42.125 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'TestAgrege' on server '(localdb)\mssqllocaldb' is being disposed after spending 6ms reading results.
+dbug: 2023-04-12 19:29:42.125 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:42.125 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb' (0ms).
+dbug: 2023-04-12 19:29:42.125 CoreEventId.SaveChangesStarting[10004] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges starting for 'BibliothequeAdminDbContext'.
+dbug: 2023-04-12 19:29:42.125 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'BibliothequeAdminDbContext'.
+dbug: 2023-04-12 19:29:42.126 CoreEventId.PropertyChangeDetected[10802] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      The unchanged property 'Livre.IdBibliotheque' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+dbug: 2023-04-12 19:29:42.126 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      An entity of type 'Livre' tracked by 'BibliothequeAdminDbContext' changed state from 'Unchanged' to 'Modified'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 2023-04-12 19:29:42.127 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'BibliothequeAdminDbContext'.
+dbug: 2023-04-12 19:29:42.130 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:42.131 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:42.131 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 2023-04-12 19:29:42.131 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 2023-04-12 19:29:42.131 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 2023-04-12 19:29:42.131 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SET IMPLICIT_TRANSACTIONS OFF;
+      SET NOCOUNT ON;
+      UPDATE [Livres] SET [IdBibliotheque] = @p0
+      OUTPUT 1
+      WHERE [Id] = @p1;
+info: 2023-04-12 19:29:42.145 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (14ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SET IMPLICIT_TRANSACTIONS OFF;
+      SET NOCOUNT ON;
+      UPDATE [Livres] SET [IdBibliotheque] = @p0
+      OUTPUT 1
+      WHERE [Id] = @p1;
+dbug: 2023-04-12 19:29:42.145 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:42.145 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'TestAgrege' on server '(localdb)\mssqllocaldb' is being disposed after spending 0ms reading results.
+dbug: 2023-04-12 19:29:42.145 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:42.145 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb' (0ms).
+dbug: 2023-04-12 19:29:42.146 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      An entity of type 'Livre' tracked by 'BibliothequeAdminDbContext' changed state from 'Modified' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 2023-04-12 19:29:42.146 CoreEventId.SaveChangesCompleted[10005] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges completed for 'BibliothequeAdminDbContext' with 1 entities written to the database.
+dbug: 2023-04-12 19:29:42.150 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 2023-04-12 19:29:42.150 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 2023-04-12 19:29:42.150 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 2023-04-12 19:29:42.150 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:42.150 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:42.150 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[@__livreId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [l].[Id], [l].[AnneePublication], [l].[IdBibliotheque], [l].[Titre]
+      FROM [Livres] AS [l]
+      WHERE [l].[Id] = @__livreId_0
+info: 2023-04-12 19:29:42.160 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (10ms) [Parameters=[@__livreId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [l].[Id], [l].[AnneePublication], [l].[IdBibliotheque], [l].[Titre]
+      FROM [Livres] AS [l]
+      WHERE [l].[Id] = @__livreId_0
+dbug: 2023-04-12 19:29:42.161 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:42.161 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'TestAgrege' on server '(localdb)\mssqllocaldb' is being disposed after spending 0ms reading results.
+dbug: 2023-04-12 19:29:42.161 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:42.161 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb' (0ms).
+dbug: 2023-04-12 19:29:42.161 CoreEventId.SaveChangesStarting[10004] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges starting for 'BibliothequeAdminDbContext'.
+dbug: 2023-04-12 19:29:42.161 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'BibliothequeAdminDbContext'.
+dbug: 2023-04-12 19:29:42.163 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'BibliothequeAdminDbContext'.
+dbug: 2023-04-12 19:29:42.163 CoreEventId.SaveChangesCompleted[10005] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges completed for 'BibliothequeAdminDbContext' with 0 entities written to the database.
+dbug: 2023-04-12 19:29:42.163 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 2023-04-12 19:29:42.163 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 2023-04-12 19:29:42.163 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 2023-04-12 19:29:42.163 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:42.164 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:42.164 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[@__livreId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [l].[Id], [l].[AnneePublication], [l].[IdBibliotheque], [l].[Titre]
+      FROM [Livres] AS [l]
+      WHERE [l].[Id] = @__livreId_0
+info: 2023-04-12 19:29:42.174 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (11ms) [Parameters=[@__livreId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [l].[Id], [l].[AnneePublication], [l].[IdBibliotheque], [l].[Titre]
+      FROM [Livres] AS [l]
+      WHERE [l].[Id] = @__livreId_0
+dbug: 2023-04-12 19:29:42.174 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:42.175 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'TestAgrege' on server '(localdb)\mssqllocaldb' is being disposed after spending 0ms reading results.
+dbug: 2023-04-12 19:29:42.175 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:42.175 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb' (0ms).
+dbug: 2023-04-12 19:29:42.175 CoreEventId.SaveChangesStarting[10004] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges starting for 'BibliothequeAdminDbContext'.
+dbug: 2023-04-12 19:29:42.175 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'BibliothequeAdminDbContext'.
+dbug: 2023-04-12 19:29:42.175 CoreEventId.PropertyChangeDetected[10802] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      The unchanged property 'Livre.IdBibliotheque' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+dbug: 2023-04-12 19:29:42.175 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      An entity of type 'Livre' tracked by 'BibliothequeAdminDbContext' changed state from 'Unchanged' to 'Modified'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 2023-04-12 19:29:42.175 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'BibliothequeAdminDbContext'.
+dbug: 2023-04-12 19:29:42.175 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:42.175 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:42.175 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 2023-04-12 19:29:42.175 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 2023-04-12 19:29:42.175 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 2023-04-12 19:29:42.176 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SET IMPLICIT_TRANSACTIONS OFF;
+      SET NOCOUNT ON;
+      UPDATE [Livres] SET [IdBibliotheque] = @p0
+      OUTPUT 1
+      WHERE [Id] = @p1;
+info: 2023-04-12 19:29:42.186 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (11ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SET IMPLICIT_TRANSACTIONS OFF;
+      SET NOCOUNT ON;
+      UPDATE [Livres] SET [IdBibliotheque] = @p0
+      OUTPUT 1
+      WHERE [Id] = @p1;
+dbug: 2023-04-12 19:29:42.186 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:42.186 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'TestAgrege' on server '(localdb)\mssqllocaldb' is being disposed after spending 0ms reading results.
+dbug: 2023-04-12 19:29:42.186 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:42.186 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb' (0ms).
+dbug: 2023-04-12 19:29:42.187 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      An entity of type 'Livre' tracked by 'BibliothequeAdminDbContext' changed state from 'Modified' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 2023-04-12 19:29:42.187 CoreEventId.SaveChangesCompleted[10005] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges completed for 'BibliothequeAdminDbContext' with 1 entities written to the database.
+dbug: 2023-04-12 19:29:42.187 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 2023-04-12 19:29:42.187 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 2023-04-12 19:29:42.187 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 2023-04-12 19:29:42.187 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:42.187 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:42.187 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[@__livreId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [l].[Id], [l].[AnneePublication], [l].[IdBibliotheque], [l].[Titre]
+      FROM [Livres] AS [l]
+      WHERE [l].[Id] = @__livreId_0
+info: 2023-04-12 19:29:42.198 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (10ms) [Parameters=[@__livreId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [l].[Id], [l].[AnneePublication], [l].[IdBibliotheque], [l].[Titre]
+      FROM [Livres] AS [l]
+      WHERE [l].[Id] = @__livreId_0
+dbug: 2023-04-12 19:29:42.198 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:42.198 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'TestAgrege' on server '(localdb)\mssqllocaldb' is being disposed after spending 0ms reading results.
+dbug: 2023-04-12 19:29:42.198 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:42.198 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb' (0ms).
+dbug: 2023-04-12 19:29:42.198 CoreEventId.SaveChangesStarting[10004] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges starting for 'BibliothequeAdminDbContext'.
+dbug: 2023-04-12 19:29:42.198 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'BibliothequeAdminDbContext'.
+dbug: 2023-04-12 19:29:42.198 CoreEventId.PropertyChangeDetected[10802] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      The unchanged property 'Livre.IdBibliotheque' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+dbug: 2023-04-12 19:29:42.198 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      An entity of type 'Livre' tracked by 'BibliothequeAdminDbContext' changed state from 'Unchanged' to 'Modified'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 2023-04-12 19:29:42.198 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'BibliothequeAdminDbContext'.
+dbug: 2023-04-12 19:29:42.198 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:42.198 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:42.198 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 2023-04-12 19:29:42.198 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 2023-04-12 19:29:42.198 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 2023-04-12 19:29:42.198 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SET IMPLICIT_TRANSACTIONS OFF;
+      SET NOCOUNT ON;
+      UPDATE [Livres] SET [IdBibliotheque] = @p0
+      OUTPUT 1
+      WHERE [Id] = @p1;
+info: 2023-04-12 19:29:42.208 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (10ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SET IMPLICIT_TRANSACTIONS OFF;
+      SET NOCOUNT ON;
+      UPDATE [Livres] SET [IdBibliotheque] = @p0
+      OUTPUT 1
+      WHERE [Id] = @p1;
+dbug: 2023-04-12 19:29:42.208 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:42.208 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'TestAgrege' on server '(localdb)\mssqllocaldb' is being disposed after spending 0ms reading results.
+dbug: 2023-04-12 19:29:42.208 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:42.208 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb' (0ms).
+dbug: 2023-04-12 19:29:42.208 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      An entity of type 'Livre' tracked by 'BibliothequeAdminDbContext' changed state from 'Modified' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 2023-04-12 19:29:42.208 CoreEventId.SaveChangesCompleted[10005] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges completed for 'BibliothequeAdminDbContext' with 1 entities written to the database.
+dbug: 2023-04-12 19:29:42.209 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'BibliothequeAdminDbContext' disposed.
+dbug: 2023-04-12 19:29:42.209 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:42.209 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 2023-04-12 19:29:42.212 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 7.0.5 initialized 'BibliothequeAdminDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.5' with options: None
+dbug: 2023-04-12 19:29:42.216 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<Livre>()
+          .Join(
+              inner: DbSet<UneBibliotheque>(), 
+              outerKeySelector: l => l.IdBibliotheque, 
+              innerKeySelector: b => (int?)b.Id, 
+              resultSelector: (l, b) => new { 
+                  Livre = l, 
+                  Bibliotheque = b
+               })
+          .GroupBy(x => x.Bibliotheque.Nom)
+          .Select(g => Tuple.Create<string, int>(
+              item1: g.Key, 
+              item2: g
+                  .Count()))'
+dbug: 2023-04-12 19:29:42.331 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<Tuple<string, int>>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Client Projections:
+                  0 -> 0
+                  1 -> 1
+              SELECT b.Nom, COUNT(*)
+              FROM Livres AS l
+              INNER JOIN Bibliotheques AS b ON l.IdBibliotheque == b.Id
+              GROUP BY b.Nom), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Tuple<string, int>>, 
+          LesBibiliotheque.Data.Data.BibliothequeAdminDbContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: 2023-04-12 19:29:42.335 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 2023-04-12 19:29:42.335 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 2023-04-12 19:29:42.335 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 2023-04-12 19:29:42.335 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 2023-04-12 19:29:42.335 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 2023-04-12 19:29:42.335 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:42.335 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:42.335 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [b].[Nom], COUNT(*)
+      FROM [Livres] AS [l]
+      INNER JOIN [Bibliotheques] AS [b] ON [l].[IdBibliotheque] = [b].[Id]
+      GROUP BY [b].[Nom]
+info: 2023-04-12 19:29:42.353 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (18ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [b].[Nom], COUNT(*)
+      FROM [Livres] AS [l]
+      INNER JOIN [Bibliotheques] AS [b] ON [l].[IdBibliotheque] = [b].[Id]
+      GROUP BY [b].[Nom]
+dbug: 2023-04-12 19:29:42.353 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:42.353 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'TestAgrege' on server '(localdb)\mssqllocaldb' is being disposed after spending 0ms reading results.
+dbug: 2023-04-12 19:29:42.354 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:42.354 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb' (0ms).
+Bibliothèque Tomate : 1 livre(s)
+dbug: 2023-04-12 19:29:42.357 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'BibliothequeAdminDbContext' disposed.
+dbug: 2023-04-12 19:29:42.357 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'TestAgrege' on server '(localdb)\mssqllocaldb'.
+dbug: 2023-04-12 19:29:42.357 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h9EovUOxZEAcTf/lv63ofGlLBexpelntUo0ZYn7aV4AL1U3wI5WwdQkKq8hZWTg2YRRWCUNybgJz2ysLxR8oLg==",
+  "dgSpecHash": "66XP5h0zha1uqsyCLQwKFootCfAZXShlB5Ugc3aHZjUrL6ewroqUrWSufCdSo5bdGc7tAovmLXTz1yneYk+BSQ==",
   "success": true,
-  "projectFilePath": "D:\\Users\\celeb\\Desktop\\Cegep\\Cegep sixieme\\MICROSOFT\\Cours 9\\Projetbibliotheque\\TestsBibliotheque.Tests\\TestsBibliotheque.Tests.csproj",
+  "projectFilePath": "D:\\Users\\celeb\\Desktop\\Cegep\\Cegep sixieme\\MICROSOFT\\TrueMicrosoftProject\\Projetbibliotheque\\TestsBibliotheque.Tests\\TestsBibliotheque.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\celeb\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\celeb\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

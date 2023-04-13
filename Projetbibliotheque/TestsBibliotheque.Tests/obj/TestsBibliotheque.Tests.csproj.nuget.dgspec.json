@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\celeb\\Desktop\\Cegep\\Cegep sixieme\\MICROSOFT\\Cours 9\\Projetbibliotheque\\TestsBibliotheque.Tests\\TestsBibliotheque.Tests.csproj": {}
+    "D:\\Users\\celeb\\Desktop\\Cegep\\Cegep sixieme\\MICROSOFT\\TrueMicrosoftProject\\Projetbibliotheque\\TestsBibliotheque.Tests\\TestsBibliotheque.Tests.csproj": {}
   },
   "projects": {
-    "D:\\Users\\celeb\\Desktop\\Cegep\\Cegep sixieme\\MICROSOFT\\Cours 9\\Projetbibliotheque\\Projetbibliotheque\\Projetbibliotheque.Data.csproj": {
+    "D:\\Users\\celeb\\Desktop\\Cegep\\Cegep sixieme\\MICROSOFT\\TrueMicrosoftProject\\Projetbibliotheque\\Projetbibliotheque\\Projetbibliotheque.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\celeb\\Desktop\\Cegep\\Cegep sixieme\\MICROSOFT\\Cours 9\\Projetbibliotheque\\Projetbibliotheque\\Projetbibliotheque.Data.csproj",
+        "projectUniqueName": "D:\\Users\\celeb\\Desktop\\Cegep\\Cegep sixieme\\MICROSOFT\\TrueMicrosoftProject\\Projetbibliotheque\\Projetbibliotheque\\Projetbibliotheque.Data.csproj",
         "projectName": "Projetbibliotheque.Data",
-        "projectPath": "D:\\Users\\celeb\\Desktop\\Cegep\\Cegep sixieme\\MICROSOFT\\Cours 9\\Projetbibliotheque\\Projetbibliotheque\\Projetbibliotheque.Data.csproj",
+        "projectPath": "D:\\Users\\celeb\\Desktop\\Cegep\\Cegep sixieme\\MICROSOFT\\TrueMicrosoftProject\\Projetbibliotheque\\Projetbibliotheque\\Projetbibliotheque.Data.csproj",
         "packagesPath": "C:\\Users\\celeb\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\celeb\\Desktop\\Cegep\\Cegep sixieme\\MICROSOFT\\Cours 9\\Projetbibliotheque\\Projetbibliotheque\\obj\\",
+        "outputPath": "D:\\Users\\celeb\\Desktop\\Cegep\\Cegep sixieme\\MICROSOFT\\TrueMicrosoftProject\\Projetbibliotheque\\Projetbibliotheque\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "D:\\Users\\celeb\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -65,14 +65,14 @@
         }
       }
     },
-    "D:\\Users\\celeb\\Desktop\\Cegep\\Cegep sixieme\\MICROSOFT\\Cours 9\\Projetbibliotheque\\TestsBibliotheque.Tests\\TestsBibliotheque.Tests.csproj": {
+    "D:\\Users\\celeb\\Desktop\\Cegep\\Cegep sixieme\\MICROSOFT\\TrueMicrosoftProject\\Projetbibliotheque\\TestsBibliotheque.Tests\\TestsBibliotheque.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\celeb\\Desktop\\Cegep\\Cegep sixieme\\MICROSOFT\\Cours 9\\Projetbibliotheque\\TestsBibliotheque.Tests\\TestsBibliotheque.Tests.csproj",
+        "projectUniqueName": "D:\\Users\\celeb\\Desktop\\Cegep\\Cegep sixieme\\MICROSOFT\\TrueMicrosoftProject\\Projetbibliotheque\\TestsBibliotheque.Tests\\TestsBibliotheque.Tests.csproj",
         "projectName": "TestsBibliotheque.Tests",
-        "projectPath": "D:\\Users\\celeb\\Desktop\\Cegep\\Cegep sixieme\\MICROSOFT\\Cours 9\\Projetbibliotheque\\TestsBibliotheque.Tests\\TestsBibliotheque.Tests.csproj",
+        "projectPath": "D:\\Users\\celeb\\Desktop\\Cegep\\Cegep sixieme\\MICROSOFT\\TrueMicrosoftProject\\Projetbibliotheque\\TestsBibliotheque.Tests\\TestsBibliotheque.Tests.csproj",
         "packagesPath": "C:\\Users\\celeb\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\celeb\\Desktop\\Cegep\\Cegep sixieme\\MICROSOFT\\Cours 9\\Projetbibliotheque\\TestsBibliotheque.Tests\\obj\\",
+        "outputPath": "D:\\Users\\celeb\\Desktop\\Cegep\\Cegep sixieme\\MICROSOFT\\TrueMicrosoftProject\\Projetbibliotheque\\TestsBibliotheque.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "D:\\Users\\celeb\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -89,8 +89,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\Users\\celeb\\Desktop\\Cegep\\Cegep sixieme\\MICROSOFT\\Cours 9\\Projetbibliotheque\\Projetbibliotheque\\Projetbibliotheque.Data.csproj": {
-                "projectPath": "D:\\Users\\celeb\\Desktop\\Cegep\\Cegep sixieme\\MICROSOFT\\Cours 9\\Projetbibliotheque\\Projetbibliotheque\\Projetbibliotheque.Data.csproj"
+              "D:\\Users\\celeb\\Desktop\\Cegep\\Cegep sixieme\\MICROSOFT\\TrueMicrosoftProject\\Projetbibliotheque\\Projetbibliotheque\\Projetbibliotheque.Data.csproj": {
+                "projectPath": "D:\\Users\\celeb\\Desktop\\Cegep\\Cegep sixieme\\MICROSOFT\\TrueMicrosoftProject\\Projetbibliotheque\\Projetbibliotheque\\Projetbibliotheque.Data.csproj"
               }
             }
           }
