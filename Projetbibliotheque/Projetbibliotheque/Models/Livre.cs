@@ -1,10 +1,4 @@
 ﻿using BibiliothequeProjet.Data.Models;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LesBibiliotheque.Data.Models
 {
@@ -16,7 +10,6 @@ namespace LesBibiliotheque.Data.Models
 
         public int AnneePublication { get; set; }
 
-        //clef étrangaire pour directuer
         public int? IdBibliotheque { get; set; }
         public List<UneBibliotheque?> Bibliotheques { get; set; }
 

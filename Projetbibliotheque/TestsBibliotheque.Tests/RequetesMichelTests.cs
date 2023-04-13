@@ -4,13 +4,6 @@ using BibiliothequeAdminData.Services;
 using BibiliothequeProjet.Data.Models;
 using LesBibiliotheque.Data.Data;
 using LesBibiliotheque.Data.Models;
-using LesBibiliotheque.Data.Services;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TestsBibliotheque.Tests
 {
@@ -92,7 +85,7 @@ namespace TestsBibliotheque.Tests
 
 
                 // Act
-                var result = db.Agrege();
+                var result = db.AgregeParBibliothequeEtNbTotalDeLivres();
 
                 foreach (var tuple in result)
                 {
@@ -144,7 +137,7 @@ namespace TestsBibliotheque.Tests
             {
                 var indexZ = 0;
 
-                var resultat = db.Recherche("Canard", michelId);
+                var resultat = db.RechercherTitreLivreDuneBiblio("Canard", michelId);
                 Assert.IsTrue(resultat.Count >= indexZ);
                 Assert.AreEqual("Canard", resultat[indexZ].Titre);
                 Assert.AreEqual(1, resultat[indexZ].IdBibliotheque);

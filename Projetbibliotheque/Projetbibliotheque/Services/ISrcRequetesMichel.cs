@@ -1,11 +1,4 @@
-﻿using LesBibiliotheque.Data.Data;
-using LesBibiliotheque.Data.Models;
-using LesBibiliotheque.Data.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using LesBibiliotheque.Data.Models;
 
 namespace BibiliothequeAdminData.Services
 {
@@ -14,9 +7,9 @@ namespace BibiliothequeAdminData.Services
         List<Livre> TrierLesBibliothequeParNom(List<Livre> liste);
 
 
-        List<Livre> Recherche(string titreDuLivre, int numDeLaBiblio);
+        List<Livre> RechercherTitreLivreDuneBiblio(string titreDuLivre, int numDeLaBiblio);
 
-        List<Tuple<string, int>> Agrege();
+        List<Tuple<string?, int>> AgregeParBibliothequeEtNbTotalDeLivres();
 
     }
 }

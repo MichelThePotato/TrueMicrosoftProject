@@ -1,13 +1,6 @@
 ﻿using LesBibiliotheque.Data.Data;
 using LesBibiliotheque.Data.Models;
 using LesBibiliotheque.Data.Services;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Metadata;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BibiliothequeAdminData.Services
 {
@@ -31,7 +24,7 @@ namespace BibiliothequeAdminData.Services
         }
      
 
-        public List<Livre> Recherche(string titreDuLivre, int numDeLaBiblio)
+        public List<Livre> RechercherTitreLivreDuneBiblio(string titreDuLivre, int numDeLaBiblio)
         {
             /* var listeFiltrer =db.Livres;
              listeFiltrer.Where(x => x.Titre != null
@@ -61,7 +54,7 @@ namespace BibiliothequeAdminData.Services
             db.Dispose();
         }
 
-        public List<Tuple<string, int>> Agrege()
+        public List<Tuple<string?, int>> AgregeParBibliothequeEtNbTotalDeLivres()
         {
             /* var result = db.Livres
              .GroupBy(l => l.IdBibliotheque)

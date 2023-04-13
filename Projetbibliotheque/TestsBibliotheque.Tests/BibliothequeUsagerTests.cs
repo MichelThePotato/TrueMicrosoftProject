@@ -4,7 +4,6 @@ using BibiliothequeProjet.Data.Models;
 using LesBibiliotheque.Data.Data;
 using LesBibiliotheque.Data.Models;
 using LesBibiliotheque.Data.Services;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace TestsBibliotheque.Tests
 {

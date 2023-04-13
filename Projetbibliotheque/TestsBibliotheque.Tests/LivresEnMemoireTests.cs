@@ -1,7 +1,5 @@
 using LesBibiliotheque.Data.Models;
 using LesBibiliotheque.Data.Services;
-using Microsoft.IdentityModel.Tokens;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Bibliotheque.Tests
 {

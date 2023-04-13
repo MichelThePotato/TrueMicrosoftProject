@@ -1,10 +1,8 @@
 ﻿using BibiliothequeAdmin.Data.Services;
 using BibiliothequeAdmin.Services;
-using BibiliothequeAdminData.Services;
 using BibiliothequeProjet.Data.Models;
 using LesBibiliotheque.Data.Data;
 using LesBibiliotheque.Data.Models;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace TestsBibliotheque.Tests
 {
