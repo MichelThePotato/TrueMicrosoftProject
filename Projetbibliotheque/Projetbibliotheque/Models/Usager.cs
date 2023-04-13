@@ -2,7 +2,7 @@
 
 namespace LesBibiliotheque.Data.Models
 {
-    public class Usager
+    public class Usager : IEquatable<Usager>, IComparable<Usager>
     {
         public int Id { get; set; }
 
@@ -13,6 +13,24 @@ namespace LesBibiliotheque.Data.Models
 
         public List<UneBibliotheque>? Bibiliotheques { get; set; }
 
+        public int CompareTo(Usager other)
+        {
+            if (other == null)
+            {
+                return 1;
+            }
 
+            // Compare Usagers by their Nom property, ignoring case
+            return string.Compare(Nom, other.Nom, StringComparison.OrdinalIgnoreCase);
+        }
+
+        public bool Equals(Usager? other)
+        {
+            return string.Equals(Nom, other?.Nom, StringComparison.OrdinalIgnoreCase);
+        }
+        public override bool Equals(object? obj)
+        {
+            return Equals(obj as Usager);
+        }
     }
 }

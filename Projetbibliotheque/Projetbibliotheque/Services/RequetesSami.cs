@@ -57,15 +57,13 @@ namespace Projetbibliotheque.Data.Services
             return result; // Return the list of Usagers with the detailed information about their related Bibliotheque entity
 
         }
-
         public List<Usager> TrierLesBibliothequeParNom(List<Usager> liste)
         {
-            // Sort the list of Usagers by the Nom property of the associated Bibliotheque entity indirectly through the IdBibliotheque property
+            // Sort the list of Usagers by the Nom property of the Usager entity
             var result = liste.OrderBy(usager =>
             {
-                var bibliotheque = usager.Bibiliotheques?.FirstOrDefault(b => b.Id == usager.IdBibliotheque);
-                return bibliotheque?.Nom;
-            }).ToList();
+                return usager.Nom;
+            }, StringComparer.Ordinal).ToList();
 
             return result; // Return the sorted list of Usagers
         }
