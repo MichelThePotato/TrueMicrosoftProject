@@ -3,10 +3,23 @@ using LesBibiliotheque.Data.Models;
 
 namespace Projetbibliotheque.Data.Services
 {
-    internal class RequetesSami : ISrcRequeteSami, IDisposable
+    public class RequetesSami : ISrcRequeteSami, IDisposable
     {
         private readonly BibliothequeAdminDbContext dbContext;
 
+        public RequetesSami(string connexion, bool ensureCreated = false)
+        {
+            this.dbContext = new BibliothequeAdminDbContext(connexion);
+            if (ensureCreated)
+            {
+                dbContext.Database.EnsureDeleted();
+                dbContext.Database.EnsureCreated();
+            }
+        }
+        public RequetesSami()
+        {
+
+        }
         public List<Tuple<string, int>> Agregation()
         {
             // Perform the LINQ query
@@ -26,17 +39,40 @@ namespace Projetbibliotheque.Data.Services
 
         public List<Usager> Recherche(string Nom, int biblioId)
         {
-            throw new NotImplementedException();
+            // Query the BibliothequeAdminDbContext to get Usagers and their related Bibliotheque entity
+            var result = (
+                from usager in dbContext.Usagers
+                where usager.Nom.Contains(Nom) // Filter Usagers by name containing the provided Nom parameter
+                join bibliotheque in dbContext.Bibliotheques on usager.IdBibliotheque equals bibliotheque.Id // Perform a join with the Bibliotheques DbSet based on the IdBibliotheque property
+                where bibliotheque.Id == biblioId // Filter Bibliotheques by the provided biblioId parameter
+                select new Usager
+                {
+                    // Set the properties of the Usager object
+                    Id = usager.Id,
+                    Nom = usager.Nom,
+                    // Set the properties of the related Bibliotheque entity
+                    IdBibliotheque = bibliotheque.Id
+                }).ToList();
+
+            return result; // Return the list of Usagers with the detailed information about their related Bibliotheque entity
+
         }
 
         public List<Usager> TrierLesBibliothequeParNom(List<Usager> liste)
         {
-            throw new NotImplementedException();
+            // Sort the list of Usagers by the Nom property of the associated Bibliotheque entity indirectly through the IdBibliotheque property
+            var result = liste.OrderBy(usager =>
+            {
+                var bibliotheque = usager.Bibiliotheques?.FirstOrDefault(b => b.Id == usager.IdBibliotheque);
+                return bibliotheque?.Nom;
+            }).ToList();
+
+            return result; // Return the sorted list of Usagers
         }
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            dbContext.Dispose();
         }
     }
 }

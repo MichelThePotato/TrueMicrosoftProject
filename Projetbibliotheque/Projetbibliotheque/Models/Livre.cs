@@ -1,10 +1,4 @@
 ﻿using BibiliothequeProjet.Data.Models;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LesBibiliotheque.Data.Models
 {
@@ -42,4 +36,4 @@ namespace LesBibiliotheque.Data.Models
             return Id.GetHashCode();
         }
     }
-    }
+}

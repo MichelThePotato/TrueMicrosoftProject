@@ -4,13 +4,6 @@ using BibiliothequeAdminData.Services;
 using BibiliothequeProjet.Data.Models;
 using LesBibiliotheque.Data.Data;
 using LesBibiliotheque.Data.Models;
-using LesBibiliotheque.Data.Services;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TestsBibliotheque.Tests
 {
@@ -38,7 +31,7 @@ namespace TestsBibliotheque.Tests
             //Arrange
             var baseName = "TestAgrege";
             var connexionString = $"Server=(localdb)\\mssqllocaldb;Database={baseName};Trusted_Connection=true;";
-
+            //Premiere session qui crees la table bibliotheques
             using (var bibliotheques = new Bibliotheques(connexionString, ensureCreated: true))
             {
                 var uneBibliotheque = new UneBibliotheque() { Nom = "Michel" };
@@ -49,7 +42,7 @@ namespace TestsBibliotheque.Tests
                 bibliotheques.Add(uneBibliotheque3);
             }
 
-
+            //deuxieme session qui cree la table livre
             using (var db = new BibliothequeAdminDbContext(connexionString))
             {
                 var canard = new Livre { Titre = "Canard", AnneePublication = 4 };
@@ -197,6 +190,6 @@ namespace TestsBibliotheque.Tests
         }
     }
 
-   
+
 
 }

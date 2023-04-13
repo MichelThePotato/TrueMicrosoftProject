@@ -1,9 +1,5 @@
 ﻿using LesBibiliotheque.Data.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace LesBibiliotheque.Data.Services
 {
@@ -15,7 +11,7 @@ namespace LesBibiliotheque.Data.Services
         {
             this.livres.Clear();
             this.livres.AddRange(livresEnMemoire);
-           //this.livres = livresEnMemoire;
+            //this.livres = livresEnMemoire;
         }
 
         public Livre? Get(int id)
@@ -31,6 +27,6 @@ namespace LesBibiliotheque.Data.Services
             return livres;
         }
 
-       
+
     }
 }

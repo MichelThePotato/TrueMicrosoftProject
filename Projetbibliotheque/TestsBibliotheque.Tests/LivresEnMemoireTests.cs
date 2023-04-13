@@ -1,14 +1,13 @@
 using LesBibiliotheque.Data.Models;
 using LesBibiliotheque.Data.Services;
-using Microsoft.IdentityModel.Tokens;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+
 
 namespace Bibliotheque.Tests
 {
     [TestClass]
     public class LivresEnMemoireTests
     {
-        
+
         /* Test unitaire qui cree une liste en memoire avec un livre dans la liste et verifie
         qu'il n'est pas null */
         [TestMethod]
@@ -40,20 +39,20 @@ namespace Bibliotheque.Tests
         public void TestGetAllFromEmptyList()
         {
             //Arrange
-           var arrangeList = new List<Livre?>();
-           /*  {
-             new Livre(){ Id = 1, Titre = "naruto", AnneePublication = 1940},
-             new Livre(){ Id = 2, Titre = "onepiece", AnneePublication = 1940},
-             new Livre(){ Id = 3, Titre = "onepiece", AnneePublication = 2023},
+            var arrangeList = new List<Livre?>();
+            /*  {
+              new Livre(){ Id = 1, Titre = "naruto", AnneePublication = 1940},
+              new Livre(){ Id = 2, Titre = "onepiece", AnneePublication = 1940},
+              new Livre(){ Id = 3, Titre = "onepiece", AnneePublication = 2023},
 
-             };
+              };
 
-            var expectedList = new List<Livre?>()
-            {
-             new Livre() { Id = 3, Titre = "onepiece", AnneePublication = 2023 },
-             new Livre() { Id = 2, Titre = "onepiece", AnneePublication = 1940 },
-             new Livre() { Id = 1, Titre = "naruto", AnneePublication = 1940 },
-             };*/
+             var expectedList = new List<Livre?>()
+             {
+              new Livre() { Id = 3, Titre = "onepiece", AnneePublication = 2023 },
+              new Livre() { Id = 2, Titre = "onepiece", AnneePublication = 1940 },
+              new Livre() { Id = 1, Titre = "naruto", AnneePublication = 1940 },
+              };*/
 
 
 
@@ -66,10 +65,10 @@ namespace Bibliotheque.Tests
 
 
             //Assert
-             CollectionAssert.AreEquivalent(actual.ToList(), arrangeList);
+            CollectionAssert.AreEquivalent(actual.ToList(), arrangeList);
             // Assert.IsTrue(actual.IsNullOrEmpty());
             //Assert.AreEqual( arrangeList, actual?.ToList());
         }
-        
+
     }
 }

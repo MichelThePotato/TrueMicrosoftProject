@@ -8,6 +8,11 @@ namespace BibiliothequeAdmin.Data.Services
     {
         private readonly BibliothequeAdminDbContext db;
 
+        /*Constructur de la classe Bibliotheques qui prend en parametre
+         * connexion:
+         * ensureCreated
+         */
+
         public Bibliotheques(string connexion, bool ensureCreated = false)
         {
             this.db = new BibliothequeAdminDbContext(connexion);
@@ -19,7 +24,9 @@ namespace BibiliothequeAdmin.Data.Services
         }
 
 
-        // Add
+        /*Méthode qui permet d'ajouter une bibliotheque a la base de donnee qui prend en parametre
+         * bibliotheque: La bibliotheque a ajouter
+         */
         public void Add(UneBibliotheque bibliotheque)
         {
             db.Bibliotheques.Add(bibliotheque);
@@ -27,7 +34,10 @@ namespace BibiliothequeAdmin.Data.Services
         }
 
 
-        // Delete 
+        /*Methode qui permet de suprimmer une bibliotheque de la liste de bibliotheques prend en parametre
+         * id: le id de la biblio a supprimer
+         * retourne true si le nombre d'entité changé est supérieure a 0 (operation reussi) sinon
+         */
         public bool Delete(int? id)
         {
             var biblio = Get(id);
@@ -39,7 +49,8 @@ namespace BibiliothequeAdmin.Data.Services
             return false;
         }
 
-        // Read (Linq)
+        /*Methode qui prmet de lire
+         */
         public UneBibliotheque Get(int? id)
         {
             return db.Bibliotheques.FirstOrDefault(b => b.Id == id);
