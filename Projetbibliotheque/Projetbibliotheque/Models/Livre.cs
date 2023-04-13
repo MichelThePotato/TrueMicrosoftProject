@@ -16,7 +16,6 @@ namespace LesBibiliotheque.Data.Models
 
         public int AnneePublication { get; set; }
 
-        //clef étrangaire pour directuer
         public int? IdBibliotheque { get; set; }
         public List<UneBibliotheque?> Bibliotheques { get; set; }
 
