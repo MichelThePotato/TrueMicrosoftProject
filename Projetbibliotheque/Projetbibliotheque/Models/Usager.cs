@@ -2,7 +2,7 @@
 
 namespace LesBibiliotheque.Data.Models
 {
-    public class Usager : IEquatable<Usager>, IComparable<Usager>
+    public class Usager
     {
         public int Id { get; set; }
 

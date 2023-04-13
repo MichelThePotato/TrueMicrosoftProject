@@ -7,10 +7,6 @@ namespace LesBibiliotheque.Data.Services
     {
         private readonly BibliothequeAdminDbContext db;
 
-        /*  public Usagers(BibliothequeAdminDbContext db)
-          {
-              this.db = db;
-          }*/
         public Usagers(string connexion, bool ensureCreated = false)
         {
             this.db = new BibliothequeAdminDbContext(connexion);

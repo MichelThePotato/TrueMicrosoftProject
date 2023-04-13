@@ -1,8 +1,8 @@
 ﻿using BibiliothequeAdmin.Data.Services;
 using BibiliothequeAdminData.Services;
 using BibiliothequeProjet.Data.Models;
-using LesBibiliotheque.Data.Data;
 using LesBibiliotheque.Data.Models;
+using LesBibiliotheque.Data.Services;
 using Projetbibliotheque.Data.Services;
 
 namespace TestsBibliotheque.Tests
@@ -29,17 +29,16 @@ namespace TestsBibliotheque.Tests
             }
 
             // Deuxième session qui crée la table livre
-            using (var db = new BibliothequeAdminDbContext(connectionString))
+            using (var db = new Usagers(connectionString))
             {
                 var usager1 = new Usager { Nom = "Usager 1" };
-                var usager2 = new Usager { Nom = "Usager 2" };
-                var usager3 = new Usager { Nom = "Usager 3" };
+                var usager2 = new Usager { Nom = "Usager 3" };
+                var usager3 = new Usager { Nom = "Usager 2" };
                 var usager4 = new Usager { Nom = "Usager 4" };
-                db.Usagers.Add(usager1);
-                db.Usagers.Add(usager2);
-                db.Usagers.Add(usager3);
-                db.Usagers.Add(usager4);
-                db.SaveChanges();
+                db.Add(usager1);
+                db.Add(usager2);
+                db.Add(usager3);
+                db.Add(usager4);
             }
 
             using (var bibliothequeUsager = new BibliothequeUsager(connectionString))
@@ -94,13 +93,16 @@ namespace TestsBibliotheque.Tests
                 bibliotheques.Add(uneBibliotheque);
             }
 
-            using (var db = new BibliothequeAdminDbContext(connexionString))
+            using (var db = new Usagers(connexionString))
             {
-                var usager1 = new Usager { Nom = "Usager1" };
-                var usager2 = new Usager { Nom = "Usager2" };
-                db.Usagers.Add(usager1);
-                db.Usagers.Add(usager2);
-                db.SaveChanges();
+                var usager1 = new Usager { Nom = "Usager 1" };
+                var usager2 = new Usager { Nom = "Usager 3" };
+                var usager3 = new Usager { Nom = "Usager 2" };
+                var usager4 = new Usager { Nom = "Usager 4" };
+                db.Add(usager1);
+                db.Add(usager2);
+                db.Add(usager3);
+                db.Add(usager4);
             }
 
             using (var biblioUsager = new BibliothequeUsager(connexionString))
@@ -124,29 +126,40 @@ namespace TestsBibliotheque.Tests
             }
 
         }
-
         [TestMethod]
         public void TestTrierUsagersParNom()
         {
-            var arrangeList = new List<Usager>() {
-                new Usager() {Nom="Albert"},
-                new Usager() {Nom="Stephane"},
-                new Usager() {Nom="Bernard"},
-                new Usager() {Nom="Bernard"},
-            };
+            // Arrange
+            var baseName = "TestTrierUsagersParNom";
+            var connexionString = $"Server=(localdb)\\mssqllocaldb;Database={baseName};Trusted_Connection=true;";
 
-            var expectedList = new List<Usager>() {
-                new Usager() {Nom="Albert"},
-                new Usager() {Nom="Bernard"},
-                new Usager() {Nom="Bernard"},
-                new Usager() {Nom="Stephane"},
-            };
+            using (var db = new Usagers(connexionString, true))
+            {
+                var usager1 = new Usager { Nom = "Usager 1" };
+                var usager2 = new Usager { Nom = "Usager 3" };
+                var usager3 = new Usager { Nom = "Usager 2" };
+                var usager4 = new Usager { Nom = "Usager 4" };
+                db.Add(usager1);
+                db.Add(usager2);
+                db.Add(usager3);
+                db.Add(usager4);
+            }
 
-            ISrcRequeteSami re = new RequetesSami();
+            // Act
+            using (var db = new RequetesSami(connexionString))
+            {
+                var liste = db.TrierUsagerParNom(); // Sort the usagers by name and store the sorted list
 
-            var liste = re.TrierLesBibliothequeParNom(arrangeList.ToList());
+                // Assert
+                var expectedList = new List<Usager?>{
+            new Usager { Nom = "Usager 1" },
+            new Usager { Nom = "Usager 2" },
+            new Usager { Nom = "Usager 3" },
+            new Usager { Nom = "Usager 4" }
+        };
 
-            CollectionAssert.AreEqual(expectedList.Select(usager => usager.Nom).ToList(), liste.Select(usager => usager.Nom).ToList());
+                CollectionAssert.AreEqual(expectedList, liste); // Compare the sorted list with the expected list
+            }
         }
     }//class
 }//namespace
