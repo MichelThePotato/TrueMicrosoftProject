@@ -9,6 +9,6 @@ namespace Projetbibliotheque.Data.Services
 
         List<Usager> Recherche(string Nom, int biblioId);
 
-        List<Tuple<string, int>> Agrege();
+        List<Tuple<string, int>> Agregation();
     }
 }

@@ -1,10 +1,8 @@
 ﻿using BibiliothequeAdmin.Data.Services;
 using BibiliothequeAdminData.Services;
 using BibiliothequeProjet.Data.Models;
-using LesBibiliotheque.Data.Data;
 using LesBibiliotheque.Data.Models;
 using LesBibiliotheque.Data.Services;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace TestsBibliotheque.Tests
 {
@@ -80,12 +78,11 @@ namespace TestsBibliotheque.Tests
                 bibliotheques.Add(uneBibliotheque);
             }
 
-
-            using (var db = new BibliothequeAdminDbContext(connexionString))
+            using (var usagers = new Usagers(connexionString))
             {
-                db.Usagers.Add(unUsager);
-                db.SaveChanges();
+                usagers.Add(unUsager);
             }
+
 
             using (var biblioUsager = new BibliothequeUsager(connexionString))
             {
@@ -134,11 +131,10 @@ namespace TestsBibliotheque.Tests
             }
 
 
-            using (var db = new BibliothequeAdminDbContext(connexionString))
+            using (var usagers = new Usagers(connexionString))
             {
-                var unUsager = new Usager { Nom = "Tom" };
-                db.Usagers.Add(unUsager);
-                db.SaveChanges();
+                var unUsager = new Usager() { Nom = "Bob" };
+                usagers.Add(unUsager);
             }
 
             using (var biblioUsager = new BibliothequeUsager(connexionString))
@@ -167,11 +163,10 @@ namespace TestsBibliotheque.Tests
             }
 
 
-            using (var db = new BibliothequeAdminDbContext(connexionString))
+            using (var usagers = new Usagers(connexionString))
             {
-                var unUsager = new Usager { Nom = "Jon" };
-                db.Usagers.Add(unUsager);
-                db.SaveChanges();
+                var unUsager = new Usager() { Nom = "Bob" };
+                usagers.Add(unUsager);
             }
 
             using (var biblioUsager = new BibliothequeUsager(connexionString))
@@ -202,17 +197,20 @@ namespace TestsBibliotheque.Tests
             }
 
 
-            using (var db = new BibliothequeAdminDbContext(connexionString))
+            using (var usagers = new Usagers(connexionString))
             {
-                var unUsager = new Usager { Nom = "John" };
+                var unUsager = new Usager() { Nom = "Bob" };
                 var unUsager2 = new Usager { Nom = "Bob" };
                 var unUsager3 = new Usager { Nom = "Robert" };
-                db.Usagers.Add(unUsager);
-                db.Usagers.Add(unUsager2);
-                db.Usagers.Add(unUsager3);
-                db.SaveChanges();
 
+
+                usagers.Add(unUsager);
+                usagers.Add(unUsager2);
+                usagers.Add(unUsager3);
             }
+
+
+
 
             using (var biblioUsager = new BibliothequeUsager(connexionString))
             {
@@ -242,14 +240,14 @@ namespace TestsBibliotheque.Tests
             }
 
 
-            using (var db = new BibliothequeAdminDbContext(connexionString))
+            using (var usagers = new Usagers(connexionString))
             {
                 var unUsager = new Usager { Nom = "Jean" };
                 var unUsager2 = new Usager { Nom = "Bilal" };
-                db.Usagers.Add(unUsager);
-                db.Usagers.Add(unUsager2);
-                db.SaveChanges();
+                usagers.Add(unUsager);
+                usagers.Add(unUsager2);
             }
+
 
             using (var bibliousager = new BibliothequeUsager(connexionString))
             {
