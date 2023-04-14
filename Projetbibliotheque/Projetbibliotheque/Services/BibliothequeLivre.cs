@@ -1,10 +1,5 @@
 ﻿using LesBibiliotheque.Data.Data;
 using LesBibiliotheque.Data.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BibiliothequeAdmin.Services
 {
@@ -34,7 +29,7 @@ namespace BibiliothequeAdmin.Services
                 return false;
         }
 
-        public bool Delete( int livreId)
+        public bool Delete(int livreId)
         {
             var livre = db.Livres.SingleOrDefault(unLivre => unLivre.Id == livreId);
             if (livre != null)
@@ -66,13 +61,14 @@ namespace BibiliothequeAdmin.Services
         {
             var previousLivre = db.Livres.SingleOrDefault(unLivre => unLivre.Id == previousLivreId);
             var newLivre = db.Livres.SingleOrDefault(unLivre => unLivre.Id == newLivreId);
-            if (previousLivre != null && newLivre != null) 
+            if (previousLivre != null && newLivre != null)
             {
                 previousLivre.IdBibliotheque = null;
                 newLivre.IdBibliotheque = bibId;
                 return db.SaveChanges() > 0;
 
-            }else
+            }
+            else
                 return false;
 
         }

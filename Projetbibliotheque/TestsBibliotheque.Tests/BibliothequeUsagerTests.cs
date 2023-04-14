@@ -217,7 +217,6 @@ namespace TestsBibliotheque.Tests
                 var numDeLaBiblio = 1;
                 var precedent = 1;
                 var actuellement = 3;
-                var autre = 2;
                 var actual = biblioUsager.Update(numDeLaBiblio, precedent, actuellement);
                 Assert.IsTrue(actual);
 

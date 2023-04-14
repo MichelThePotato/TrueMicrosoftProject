@@ -4,6 +4,8 @@ using BibiliothequeAdminData.Services;
 using BibiliothequeProjet.Data.Models;
 using LesBibiliotheque.Data.Data;
 using LesBibiliotheque.Data.Models;
+using LesBibiliotheque.Data.Services;
+using Projetbibliotheque.Data.Services;
 
 namespace TestsBibliotheque.Tests
 {
@@ -26,10 +28,10 @@ namespace TestsBibliotheque.Tests
         }
 
         [TestMethod]
-        public void TestAgrege()
+        public void TestAgregegationEntreBibliothequeLivre()
         {
             //Arrange
-            var baseName = "TestAgrege";
+            var baseName = "AgregegationEntreBibliothequeLivre";
             var connexionString = $"Server=(localdb)\\mssqllocaldb;Database={baseName};Trusted_Connection=true;";
             //Premiere session qui crees la table bibliotheques
             using (var bibliotheques = new Bibliotheques(connexionString, ensureCreated: true))
@@ -85,7 +87,7 @@ namespace TestsBibliotheque.Tests
 
 
                 // Act
-                var result = db.Agrege();
+                var result = db.AgregegationEntreBibliothequeLivre();
 
                 foreach (var tuple in result)
                 {
@@ -100,12 +102,13 @@ namespace TestsBibliotheque.Tests
             }
 
         }
+      
 
         [TestMethod]
         public void TestRechercheLeNomDuLivreEtSonIdBiblio()
         {
             //Arrange
-            var baseName = "TestRechercheLeNomDuLivreEtIDBiblio";
+            var baseName = "RechercheLeNomDuLivreEtIDBiblio";
             var connexionString = $"Server=(localdb)\\mssqllocaldb;Database={baseName};Trusted_Connection=true;";
             var michelId = 1;
 
@@ -137,7 +140,7 @@ namespace TestsBibliotheque.Tests
             {
                 var indexZ = 0;
 
-                var resultat = db.Recherche("Canard", michelId);
+                var resultat = db.RechercheUnLivreDansUneBibliotheque("Canard", michelId);
                 Assert.IsTrue(resultat.Count >= indexZ);
                 Assert.AreEqual("Canard", resultat[indexZ].Titre);
                 Assert.AreEqual(1, resultat[indexZ].IdBibliotheque);
@@ -151,23 +154,23 @@ namespace TestsBibliotheque.Tests
         {
             //Arrange 
             var arrangeList = new List<Livre>()
-            {
-                    new Livre() {Titre="Olive",AnneePublication=2000},
-                    new Livre() {Titre="Homard",AnneePublication=2023},
-                    new Livre() {Titre="Amande",AnneePublication=2013},
-                    new Livre() {Titre="Olive",AnneePublication=1999},
-            };
+              {
+                      new Livre() {Titre="Olive",AnneePublication=2000},
+                      new Livre() {Titre="Homard",AnneePublication=2023},
+                      new Livre() {Titre="Amande",AnneePublication=2013},
+                      new Livre() {Titre="Olive",AnneePublication=1999},
+              };
 
             var expectedList = new List<Livre?>()
-            {
-                  new Livre() {Titre="Amande",AnneePublication=2013},
-                  new Livre() {Titre="Homard",AnneePublication=2023},
-                  new Livre() {Titre="Olive",AnneePublication=2000},
-                  new Livre() {Titre="Olive",AnneePublication=1999},
-            };
+              {
+                    new Livre() {Titre="Amande",AnneePublication=2013},
+                    new Livre() {Titre="Homard",AnneePublication=2023},
+                    new Livre() {Titre="Olive",AnneePublication=2000},
+                    new Livre() {Titre="Olive",AnneePublication=1999},
+              };
             ISrcRequetesMichel re = new RequetesMichel();
 
-            var liste = re.TrierLesBibliothequeParNom(arrangeList.ToList());
+            var liste = re.TrierLesLivresParNomEtParAnnee(arrangeList.ToList());
 
 
             // liste.ToList().ForEach(Console.WriteLine());

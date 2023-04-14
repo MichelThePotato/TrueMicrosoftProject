@@ -6,8 +6,8 @@ namespace LesBibiliotheque.Data.Services
     {
         IEnumerable<Usager?> GetAll();
         Usager? Get(int? id);
-        void Add(Usager nouveauLivre);
+        void Add(Usager nouveauUsager);
         bool Delete(int? id);
-        bool Update(Usager livreModifié);
+        bool Update(Usager usagerModifié);
     }
 }

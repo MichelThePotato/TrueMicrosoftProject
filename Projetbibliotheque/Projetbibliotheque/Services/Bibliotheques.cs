@@ -51,7 +51,7 @@ namespace BibiliothequeAdmin.Data.Services
 
         /*Methode qui prmet de lire
          */
-        public UneBibliotheque Get(int? id)
+        public UneBibliotheque? Get(int? id)
         {
             return db.Bibliotheques.FirstOrDefault(b => b.Id == id);
         }

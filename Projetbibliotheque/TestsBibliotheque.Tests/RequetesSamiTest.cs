@@ -10,6 +10,22 @@ namespace TestsBibliotheque.Tests
     [TestClass]
     public class RequetesSamiTest
     {
+
+        [TestMethod]
+        public void TestDeLaBd()
+        {
+            //Arrange
+            var baseName = "TestDeLaBd";
+            var connexionString = $"Server=(localdb)\\mssqllocaldb;Database={baseName};Trusted_Connection=true;";
+
+            using (var db = new RequetesSami(connexionString, ensureCreated: true))
+            {
+
+
+            }
+
+        }
+
         [TestMethod]
         public void TestAgrege()
         {
@@ -60,12 +76,7 @@ namespace TestsBibliotheque.Tests
 
             using (var db = new RequetesSami(connectionString))
             {
-                var nbLivreM = 2;
-                var nbLivreP = 1;
-                var nbLivreT = 1;
 
-                var indexU = 0;
-                var indexD = 1;
 
                 // Act
                 var result = db.Agregation();
@@ -76,7 +87,6 @@ namespace TestsBibliotheque.Tests
                 }
             }
         }//TestAgrege
-
 
 
         [TestMethod]
@@ -95,14 +105,10 @@ namespace TestsBibliotheque.Tests
 
             using (var db = new Usagers(connexionString))
             {
-                var usager1 = new Usager { Nom = "Usager 1" };
-                var usager2 = new Usager { Nom = "Usager 3" };
-                var usager3 = new Usager { Nom = "Usager 2" };
-                var usager4 = new Usager { Nom = "Usager 4" };
+                var usager1 = new Usager { Nom = "Usager1" };
+                var usager2 = new Usager { Nom = "Usager2" };
                 db.Add(usager1);
                 db.Add(usager2);
-                db.Add(usager3);
-                db.Add(usager4);
             }
 
             using (var biblioUsager = new BibliothequeUsager(connexionString))
@@ -161,5 +167,8 @@ namespace TestsBibliotheque.Tests
                 CollectionAssert.AreEqual(expectedList, liste); // Compare the sorted list with the expected list
             }
         }
+
+
+
     }//class
 }//namespace

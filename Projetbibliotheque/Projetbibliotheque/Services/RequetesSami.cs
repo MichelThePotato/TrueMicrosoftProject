@@ -16,10 +16,7 @@ namespace Projetbibliotheque.Data.Services
                 dbContext.Database.EnsureCreated();
             }
         }
-        public RequetesSami()
-        {
 
-        }
         public List<Tuple<string, int>> Agregation()
         {
             // Perform the LINQ query

@@ -32,5 +32,11 @@ namespace LesBibiliotheque.Data.Models
         {
             return Equals(obj as Usager);
         }
+
+
+        public override int GetHashCode()
+        {
+            return Id.GetHashCode();
+        }
     }
 }
